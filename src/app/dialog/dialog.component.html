@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Adicionar Livro </h1>
+<div mat-dialog-content>
+   <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input formControlName="productName" matInput placeholder="Nome">
+     </mat-form-field>
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Autor</mat-label>
+      <input formControlName="autor" matInput placeholder="Autor">
+     </mat-form-field>
+
+     <mat-form-field appearance="outline">
+      <mat-label>Data de Cadastro</mat-label>
+      <input formControlName="data" matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+   </form>
+
+</div>
+
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Fechar</button>
+  <button mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>
+
