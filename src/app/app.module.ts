@@ -23,6 +23,7 @@ import { SignupComponent } from './signup/signup.component';
 import { MatSortModule } from '@angular/material/sort';
 import { AdminComponent } from './admin/admin.component';
 import { ClientComponent } from './client/client.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ClientComponent } from './client/client.component';
     FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
