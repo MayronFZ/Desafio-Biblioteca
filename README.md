@@ -1,2 +1,2 @@
 # Desafio-Biblioteca
-Gerenciador de biblioteca
+Gerenciador de biblioteca feito com Angular e Json
