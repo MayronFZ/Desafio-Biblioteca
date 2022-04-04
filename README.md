@@ -1,27 +1,33 @@
-# TelaLogin
+# Gerenciador-Biblioteca
+Sistema de gerenciamento de livros usando Angular e JSON API;
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Cargo para Desenvolvedor Front-End
 
-## Development server
+## Front-end Angular
+1-Acesse a pasta src/app;
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2-Abra o terminal;
 
-## Code scaffolding
+3-Execute o comando ng serve;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4-Executado na porta http://localhost:4200/;
 
-## Build
+Foi utilizado template do bootstrap para a tela login e cadastre-se;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Foi utilizado o Angular Material para o UI;
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Back-end JSON API
+1-Dentro da pasta src/app;
 
-## Running end-to-end tests
+2-Execute o comando json-server --watch db.json;
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3-Executado na porta http://localhost:3000;
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Algumas dificuldades
+1-Conectar no sistema como admin;
+
+2-Bloquear o cliente de editar e excluir livros ja no sistema;
+
+3-Fazer com que usuarios que esqueceram a senha recuperem o acesso;
